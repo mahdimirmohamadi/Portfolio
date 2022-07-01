@@ -3,9 +3,30 @@ import "./Contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const formRef = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9h5sucj",
+        "template_e797phf",
+        formRef.current,
+        "hb9uIOQL00mJMevFi"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -32,7 +53,7 @@ const Contact = () => {
             <b>Want to Hire me?</b> Get in touch. Always available for Good
             Hiring Opputunities
           </p>
-          <form ref={formRef}>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
