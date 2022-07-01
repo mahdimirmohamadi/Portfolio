@@ -6,27 +6,12 @@ export const products = [
   },
   {
     id: 2,
-    img: "",
+    img: "https://s6.uupload.ir/files/movieland_g47o.png",
     link: "#",
   },
   {
     id: 3,
-    img: "",
-    link: "#",
-  },
-  {
-    id: 4,
-    img: "",
-    link: "#",
-  },
-  {
-    id: 5,
-    img: "",
-    link: "#",
-  },
-  {
-    id: 6,
-    img: "",
-    link: "#",
+    img: "https://s6.uupload.ir/files/sign-p_form_59ri.png",
+    link: "https://mahdimirmohamadi.github.io/signup",
   },
 ];
