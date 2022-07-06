@@ -44,6 +44,10 @@
   animation: move 10s ease-in-out infinite alternate;
 }
 
+.i-desc {
+  font-weight: bold;
+}
+
 @keyframes move {
   25% {
     transform: translateY(-50px);

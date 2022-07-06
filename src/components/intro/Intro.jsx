@@ -19,9 +19,9 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            i Design and Develop Services for Customers of all
-            sizes,specializing in creating stylish,modern web applications,web
-            services and online stores
+            I'm a Passionate and Hard-working Front-End Web Developer from
+            Tehran,Iran and i'm searching for an Intern Position as a Front-End
+            Web Developer. I'll be Glad to receive a Call from you 😊
           </p>
         </div>
         <svg

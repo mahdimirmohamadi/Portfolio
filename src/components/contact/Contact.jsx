@@ -3,7 +3,7 @@ import "./Contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
@@ -14,21 +14,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     emailjs
-      .sendForm(
-        "service_9h5sucj",
-        "template_e797phf",
-        formRef.current,
-        "user_hb9uIOQL00mJMevFi"
-      )
+      .send("service_9h5sucj", "template_6auii45", "hb9uIOQL00mJMevFi")
       .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
         },
-        (error) => {
-          console.log(error.text);
+        (err) => {
+          console.log("FAILED...", err);
         }
       );
+    // emailjs
+    //   .sendForm(
+    //     "service_9h5sucj",
+    //     "template_e797phf",
+    //     formRef.current,
+    //     "user_hb9uIOQL00mJMevFi"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setDone(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
   return (
     <div className="c">

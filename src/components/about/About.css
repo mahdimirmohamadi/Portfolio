@@ -55,6 +55,10 @@
   font-weight: 300;
 }
 
+.a-desc ol li {
+  padding: 10px;
+}
+
 .a-award {
   margin-top: 50px;
   display: flex;

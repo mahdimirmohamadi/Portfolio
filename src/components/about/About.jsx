@@ -15,25 +15,28 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+          I've been familiar with programming since 14. i started with PASCAL
+          language(now that i'm writing it it sounds kinda weird to me😂)
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          After that i learned Python and a little Django and since 2021 i
+          entered Front-End web developing cause of several reasons:
+          <ol>
+            <li>
+              I WANTED A JOB! (i know you were expecting something more
+              Emotional. sorry about that😒)
+            </li>
+            <li>
+              nothing was more enjoyable to me than Creating and Developing
+              Websites. i could've sit hours and do coding without even noticing
+              it(YES. just like FAIRYTALES 🦄)
+            </li>
+            <li>
+              wasn't the first 2 reasons satisfyinf enough for you? what else is
+              it that you're seeking so hard for?😋
+            </li>
+          </ol>
         </p>
-        <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
-          <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
-            <p className="a-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
